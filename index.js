@@ -5,7 +5,11 @@ let fightButton = document.getElementById("fightButton")
 
 fightButton.addEventListener("click", function() {
     arrayLength = fighters.length
-    console.log(arrayLength)
+
+    // get random number from 0 to array length
+    let randomNumber = Math.floor(Math.random() * arrayLength);
+
+
 
     // Challenge:
     // When the user clicks on the "Pick Fighters" button, pick two random 
